@@ -1,5 +1,5 @@
 /* 
-        189. Rotate Array
+189. Rotate Array
 Medium
 Topics
 premium lock icon
