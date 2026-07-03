@@ -57,3 +57,64 @@ class Solution {
 
     }
 }
+
+
+
+/*  Yes, your code is correct. The line
+
+arr[0] = 1;
+
+is very important.
+
+Why arr[0] = 1?
+
+Consider:
+
+digits = [9,9,9]
+
+Loop execution:
+
+[9,9,9]
+↓
+[9,9,0]
+↓
+[9,0,0]
+↓
+[0,0,0]
+
+All digits become 0, and the loop ends.
+
+Now we create:
+
+int[] arr = new int[n + 1];
+
+which is:
+
+[0,0,0,0]
+
+But:
+
+999 + 1 = 1000
+
+So we must put 1 at the first position:
+
+arr[0] = 1;
+
+Result:
+
+[1,0,0,0]
+What if you don't write arr[0] = 1?
+
+Then:
+
+int[] arr = new int[n + 1];
+return arr;
+
+returns:
+
+[0,0,0,0]
+
+which is wrong because:
+
+999 + 1 ≠ 0000
+999 + 1 = 1000 */
