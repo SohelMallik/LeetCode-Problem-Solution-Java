@@ -46,7 +46,7 @@ class Solution {
  //T:O(n) + O(n) = O(2n) = O(n)
  // S: O(1)
  // No Division Rules used
-
+// output space O(n) is not considered extra space
         for(int i = n-1; i >= 0; i--){
             ans[i] = ans[i] * suffix;
             suffix = suffix * nums[i];
