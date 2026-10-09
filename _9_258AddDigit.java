@@ -22,10 +22,8 @@ Example 2:
 
 Input: num = 0
 Output: 0
- 
 
 Constraints:
-
 0 <= num <= 231 - 1 */
 
 
