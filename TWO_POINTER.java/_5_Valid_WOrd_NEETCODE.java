@@ -56,7 +56,8 @@ class Solution {
                 if (ac == '0') {
                     return false;
                 }
-
+                // T : O(N)
+                // S : O(1)
                 int curr = 0;
 
                 while (j < abbr.length() &&
