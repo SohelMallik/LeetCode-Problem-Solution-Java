@@ -41,6 +41,8 @@ class Solution {
         int j=nums.length-1;
 
         int k= nums.length-1;
+        //T : O(N)
+        //S : O(1)
 
         while(i<=j){
             if(Math.abs(nums[i]) > Math.abs(nums[j])){
