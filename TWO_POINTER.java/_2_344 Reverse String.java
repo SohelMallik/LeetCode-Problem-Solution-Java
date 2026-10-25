@@ -33,7 +33,8 @@ class Solution {
         int i=0;
         int j = s.length-1;
 
-        
+        //T : O(N)
+        //S : O(1)
 
         while(i<j){
             char temp=s[i];
